@@ -26,7 +26,7 @@ const Landingpage = () => {
 
   return (
      
-    <main className='flex flex-col gap-10 py-10 px-5 sm:gap-10  sm:py-15 '>
+    <main className='flex flex-col gap-10 py-10 px-5 sm:gap-10  sm:py-14 '>
       <section className='text-center'>
         <h1 className='flex flex-col items-center justify-center gradient-title text-2xl font-extrabold sm:text-5xl lg:text-7xl tracking-tighter '>
           Get Hired. Get Ahead. Get Hirely.
@@ -89,7 +89,7 @@ const Landingpage = () => {
        {/* resume-analysis */}
      <div className='flex items-center justify-center'>
        <div className='flex flex-col bg-gray-200 text-center  bg-opacity-20 justify-center items-center w-[80%] border-2 border-dashed border-gray-400 rounded-lg  pt-2'>
-          <h2 className='text-[8px] sm:text-[17px] p-1 text-white w-full'>AI-Powered Resume Analyzer - Upload your resume and get instant feedback <br />to improve your chances of landing your dream job.</h2>
+          <h2 className='text-[9px] sm:text-[17px] p-1 text-white w-full'>AI-Powered Resume Analyzer - Upload your resume and get instant feedback to improve your chances of landing your dream job.</h2>
           <div className='w-full text-black  '>
           <Button variant="yellow" className="w-40 p-5 m-2">
             <Link to="/resume-analysis">Analyze Resume</Link>
