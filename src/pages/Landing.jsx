@@ -13,6 +13,7 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import faqs from "../data/faqs.json";
 import { useSearchParams } from 'react-router-dom';
 
+
 //WE CREATE COMPONENTS OUTSIDE OF FUNCTION
 //INSIDE FUNCTION WILL Be USESTATE AND USEEFFECT Hooks
 const Landingpage = () => {
@@ -25,11 +26,11 @@ const Landingpage = () => {
 
   return (
      
-    <main className='flex flex-col gap-10 py-10 px-5 sm:gap-20  sm:py-15 '>
+    <main className='flex flex-col gap-10 py-10 px-5 sm:gap-10  sm:py-15 '>
       <section className='text-center'>
-        <h1 className='flex flex-col items-center justify-center gradient-title text-2xl font-extrabold sm:text-5xl lg:text-7xl tracking-tighter py-2'>
+        <h1 className='flex flex-col items-center justify-center gradient-title text-2xl font-extrabold sm:text-5xl lg:text-7xl tracking-tighter '>
           Get Hired. Get Ahead. Get Hirely.
-          <span className='flex items-center gap-2 sm:gap-4 lg:gap-6 mt-2 sm:mt-5'>
+          <span className='flex items-center gap-2 sm:gap-4 lg:gap-4 mt-2 sm:mt-2'>
             At One Click.  <img src="/logo.png" alt="logo" className='h-8 sm:h-14 lg:h-20 lg:mx-4' />
           </span>
         </h1>
@@ -55,6 +56,8 @@ const Landingpage = () => {
         </Link>
 
       </div>
+
+      
 
       {/* //carousal */}
       <Carousel
@@ -83,6 +86,18 @@ const Landingpage = () => {
         </CarouselContent>
       </Carousel>
 
+       {/* resume-analysis */}
+     <div className='flex items-center justify-center'>
+       <div className='flex flex-col bg-gray-200 text-center  bg-opacity-20 justify-center items-center w-[80%] border-2 border-dashed border-gray-400 rounded-lg  pt-2'>
+          <h2 className='text-[8px] sm:text-[17px] p-1 text-white w-full'>AI-Powered Resume Analyzer - Upload your resume and get instant feedback <br />to improve your chances of landing your dream job.</h2>
+          <div className='w-full text-black  '>
+          <Button variant="yellow" className="w-40 p-5 m-2">
+            <Link to="/resume-analysis">Analyze Resume</Link>
+          </Button>
+          </div>
+       </div>
+     </div>
+    
       
         {/* //cards */}
         <section className="grid grid-cols-1 md:grid-cols-2 gap-4">
