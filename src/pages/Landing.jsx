@@ -92,7 +92,7 @@ const Landingpage = () => {
           <h2 className='text-[9px] sm:text-[17px] p-1 text-white w-full'>AI-Powered Resume Analyzer - Upload your resume and get instant feedback to improve your chances of landing your dream job.</h2>
           <div className='w-full text-black  '>
           <Button variant="yellow" className="w-40 p-5 m-2">
-            <Link to="https://aiml-resumescorer.streamlit.app/">Analyze Resume</Link>
+            <Link to="https://aiml-resumescorer.streamlit.app/" target="_blank">Analyze Resume</Link>
           </Button>
           </div>
        </div>
